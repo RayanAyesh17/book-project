@@ -3,7 +3,7 @@ import BookDetails from './BookPages/BookDetails';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Login from './Login/Login';
-import SignUp from './SignUp/SignUp';
+// import SignUp from './SignUp/SignUp';
 import About from './About/About';
 import Home from './Home/Home';
 import Footer from './Footer/Footer';
@@ -204,7 +204,7 @@ export default function App() {
       <div className={`main-content ${darkMode ? 'bg-dark text-light' : 'bg-light text-dark'}`}>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path="/SignUp" element={<SignUp />} />
+          {/* <Route path="/Signup" element={<SignUp />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/about" element={<About darkMode={darkMode} />} />
           <Route path="/library" element={isAuthenticated ? <BookPage darkMode={darkMode} /> : <Login />} />

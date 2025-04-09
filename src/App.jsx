@@ -203,6 +203,7 @@ export default function App() {
 
       <div className={`main-content ${darkMode ? 'bg-dark text-light' : 'bg-light text-dark'}`}>
         <Routes>
+          <Route path='/' element={<Home/>}/>
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/about" element={<About darkMode={darkMode} />} />

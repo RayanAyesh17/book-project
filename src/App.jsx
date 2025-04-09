@@ -15,7 +15,7 @@ import './App.css';
 import '@fortawesome/fontawesome-free/css/all.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Dropdown, Navbar, Nav, Container } from 'react-bootstrap';
-import Bookshelf from './BookShelf/BookShelf';
+// import Bookshelf from './BookShelf/BookShelf';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -218,7 +218,7 @@ export default function App() {
           />
           <Route path="/" element={<Home darkMode={darkMode} />} />
           <Route path="/chatapp" element={isAuthenticated ? <BookChat darkMode={darkMode} /> : <Login />} />
-          <Route 
+          {/* <Route 
             path="/bookshelf" 
             element={isAuthenticated ? (
               <Bookshelf  
@@ -230,7 +230,7 @@ export default function App() {
                 darkMode={darkMode}
               />
             ) : <Login />} 
-          />
+          /> */}
         </Routes>
       </div>
 
